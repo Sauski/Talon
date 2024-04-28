@@ -1125,7 +1125,7 @@
 
   (footprint "footprints:through_hole_m2" locked (layer "F.Cu")
     (tstamp 463388a5-b67f-4894-b047-4691b7eadd37)
-    (at 178.61 142)
+    (at 178.5 142)
     (attr smd)
     (fp_text reference "REF**" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.1)))
@@ -4571,7 +4571,7 @@
     (stroke (width 0.2) (type default)) (fill none) (layer "F.Cu") (tstamp 88b588e4-d8ad-4ec8-9660-af87b4b5c650))
   (gr_line locked (start 159.5 46.5) (end 197.5 46.5)
     (stroke (width 0.1) (type default)) (layer "F.SilkS") (tstamp 289d70de-8942-47fc-b631-ee626deaf6bd))
-  (gr_line locked (start 197.5 46.5) (end 197.5 84.8)
+  (gr_line (start 197.5 46.5) (end 197.5 126.69)
     (stroke (width 0.1) (type default)) (layer "F.SilkS") (tstamp 3c11a9a0-64fb-47f0-b542-a8a047712285))
   (gr_circle (center 235.718882 151) (end 241.8 151)
     (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp 45130998-2887-416e-a2bc-f19a726d849e))
@@ -4581,7 +4581,13 @@
     (stroke (width 0.1) (type default)) (layer "F.SilkS") (tstamp a4d8de48-914b-410b-973e-0b02da10cf9f))
   (gr_circle (center 232.92 75.28) (end 239.001118 75.28)
     (stroke (width 0.1) (type default)) (fill none) (layer "F.SilkS") (tstamp c4d1be32-ce01-427c-9a98-5f4018605952))
+  (gr_line (start 197.5 126.69) (end 199.55 126.69)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 195c8180-fffb-4da8-a5a7-05790026b078))
+  (gr_line (start 199.55 126.69) (end 199.55 136.44)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp 82161b82-d9b5-487d-93ee-d6bbffd1a155))
   (gr_rect (start 76.91 45.56) (end 234.58 158.24)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp a2e6b309-8fca-48da-b40a-bff480261d3b))
+  (gr_line (start 199.55 136.44) (end 234.57 136.44)
+    (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp bc43836a-d3d9-4632-88bd-a078ca5acff0))
 
 )
