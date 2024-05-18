@@ -117,21 +117,21 @@
 
         alpha {
             bindings = <
-                           &kp Z  &kp J                                                                                                         &kp Q  &kp SEMI
-         &kp Z             &kp C  &kp Y  &kp F             &kp P                                               &kp M             &kp W          &kp O  &kp U     &kp COMMA
+                           &kp X  &kp J                                                                                                         &kp Q  &kp SEMI
+         &kp Z             &kp C  &kp Y  &kp F             &kp P                                               &kp M             &kp W          &kp O  &kp U     &smart_layer 5 5
 &kp ESC  &kp R             &kp S  &kp T  &kp H             &smart_layer 3 3                                    &smart_layer 4 4  &kp N          &kp A  &kp I     &kp DOT           &kp RET
-         &sk LEFT_CONTROL  &kp V  &kp G  &kp D                                                                                   &kp L          &kp B  &kp K     &smart_layer 5 5
+         &sk LEFT_CONTROL  &kp V  &kp G  &kp D                                                                                   &kp L          &kp B  &kp K     &kp COMMA
                                          &smart_layer 2 2  &kp SPACE         &smart_layer 1 1    &smart_shift  &kp E             &kp BACKSPACE
             >;
         };
 
         symbols {
             bindings = <
-                       &kp GRAVE      &kp CARET                                                                                                     &kp PLUS         &kp EQUAL
-            &trans     &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN                    &kp ASTERISK  &kp AMPERSAND  &kp HASH         &kp TILDE          &kp MINUS
-&kp ESCAPE  &kp COLON  &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                       &kp SLASH     &kp SQT        &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp PERIOD  &kp ENTER
-            &none      &kp LESS_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                                        &kp QUESTION   &kp UNDER        &kp AT_SIGN        &none
-                                                            &none                  &none             &trans    &trans  &kp PIPE      &kp BACKSPACE
+                      &kp GRAVE      &kp CARET                                                                                                     &kp PLUS         &kp EQUAL
+            &trans    &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN                    &kp ASTERISK  &kp AMPERSAND  &kp HASH         &kp TILDE          &kp MINUS
+&kp ESCAPE  &kp PIPE  &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                       &kp SLASH     &kp SQT        &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp PERIOD  &kp ENTER
+            &none     &kp LESS_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                                        &kp QUESTION   &kp COLON        &kp AT_SIGN        &none
+                                                           &kp DELETE             &none             &trans    &trans  &kp UNDER     &kp BACKSPACE
             >;
         };
 
@@ -147,11 +147,11 @@
 
         navigation {
             bindings = <
-                &trans  &trans                                                                    &trans        &trans
-        &trans  &trans  &trans  &trans  &trans                    &kp LEFT_ARROW  &trans          &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-        &trans  &trans  &trans  &trans                                            &trans          &trans        &trans     &trans
-                                &trans  &trans  &trans    &trans  &kp TAB         &trans
+                &trans  &trans                                                                                  &trans                     &trans
+        &trans  &trans  &trans  &trans  &trans                        &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans          &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT  &trans  &trans
+        &trans  &trans  &trans  &trans                                                &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &trans     &trans
+                                &trans  &kp TAB  &trans    &kp LC(D)  &kp LC(U)       &trans
             >;
         };
 
