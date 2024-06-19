@@ -117,61 +117,61 @@
 
         alpha {
             bindings = <
-                           &kp Z  &kp J                                                                                                 &smart_layer 4 4  &smart_layer 5 5
-         &kp X             &kp C  &kp Y  &kp F             &kp P                                               &kp M     &kp W          &kp O             &kp U             &kp Q
-&kp ESC  &kp R             &kp S  &kp T  &kp H             &smart_layer 3 3                                    &kp SEMI  &kp N          &kp A             &kp I             &kp DOT    &kp RET
-         &sk LEFT_CONTROL  &kp V  &kp G  &kp D                                                                           &kp L          &kp B             &kp K             &kp COMMA
-                                         &smart_layer 2 2  &kp SPACE         &smart_layer 1 1    &smart_shift  &kp E     &kp BACKSPACE
+                           &smart_layer 5 5  &kp J                                                                                                 &kp Z  &smart_layer 4 4
+         &kp X             &kp C             &kp Y  &kp F             &kp P                                               &kp M     &kp W          &kp O  &kp U             &kp Q
+&kp ESC  &kp R             &kp S             &kp T  &kp H             &smart_layer 3 3                                    &kp SEMI  &kp N          &kp A  &kp I             &kp DOT    &kp RET
+         &sk LEFT_CONTROL  &kp V             &kp G  &kp D                                                                           &kp L          &kp B  &kp K             &kp COMMA
+                                                    &smart_layer 2 2  &kp SPACE         &smart_layer 1 1    &smart_shift  &kp E     &kp BACKSPACE
             >;
         };
 
         symbols {
             bindings = <
-                      &kp GRAVE      &kp CARET                                                                                                     &kp EQUAL        &trans
-            &trans    &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN                    &kp ASTERISK  &kp AMPERSAND  &kp HASH         &kp TILDE          &kp PLUS
-&kp ESCAPE  &kp PIPE  &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                       &kp SLASH     &kp SQT        &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp PERIOD  &kp ENTER
-            &trans    &kp LESS_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                                        &kp QUESTION   &kp COLON        &kp AT_SIGN        &kp MINUS
-                                                           &kp DELETE             &none             &trans    &trans  &kp UNDER     &kp BACKSPACE
+                       &trans         &kp CARET                                                                                                     &kp EQUAL        &trans
+            &kp GRAVE  &kp PERCENT    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GREATER_THAN                    &kp ASTERISK  &kp AMPERSAND  &kp HASH         &kp TILDE          &kp PLUS
+&kp ESCAPE  &kp PIPE   &kp DOLLAR     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH                       &kp SLASH     &kp SQT        &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp PERIOD  &kp ENTER
+            &trans     &kp LESS_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET                                                        &kp QUESTION   &kp COLON        &kp AT_SIGN        &kp MINUS
+                                                            &kp DELETE             &none             &trans    &trans  &kp UNDER     &kp BACKSPACE
             >;
         };
 
         numpad {
             bindings = <
-                    &trans       &kp CARET                                                                                           &kp EQUAL  &trans
-            &trans  &kp PERCENT  &trans                &trans                 &trans                    &kp ASTERISK  &kp N7         &kp N8     &kp N9  &kp PLUS
-&kp ESCAPE  &trans  &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &kp SLASH     &kp N4         &kp N5     &kp N6  &kp DOT    &kp ENTER
-            &trans  &trans       &trans                &trans                                                         &kp N1         &kp N2     &kp N3  &kp MINUS
-                                                       &trans                 &trans  &trans    &trans  &kp N0        &kp BACKSPACE
+                &trans       &kp CARET                                                                                    &kp EQUAL  &trans
+        &trans  &kp PERCENT  &trans                &trans                 &trans                    &kp ASTERISK  &kp N7  &kp N8     &kp N9  &kp PLUS
+&trans  &trans  &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &kp SLASH     &kp N4  &kp N5     &kp N6  &kp DOT    &kp ENTER
+        &trans  &trans       &trans                &trans                                                         &kp N1  &kp N2     &kp N3  &kp MINUS
+                                                   &kp DELETE             &trans  &trans    &trans  &kp N0        &trans
             >;
         };
 
         navigation {
             bindings = <
-                &trans  &trans                                                                                  &trans                     &trans
-        &trans  &trans  &trans  &trans  &trans                        &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans          &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT  &trans  &trans
-        &trans  &trans  &trans  &trans                                                &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &trans     &trans
-                                &trans  &kp TAB  &trans    &kp LC(D)  &kp LC(U)       &trans
+                &trans  &trans                                                                                     &trans                     &trans
+        &trans  &trans  &trans  &trans      &trans                       &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LA(LEFT_PARENTHESIS)  &kp LA(LC(RIGHT_PARENTHESIS))
+&trans  &trans  &trans  &trans  &trans      &trans                       &trans          &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT                 &kp TAB                        &trans
+        &trans  &trans  &trans  &trans                                                   &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
+                                &kp DELETE  &trans  &trans    &kp LC(D)  &kp LC(U)       &trans
             >;
         };
 
         appswitcher {
             bindings = <
-                            &trans               &trans                                                                              &trans  &trans
-        &kp LA(LC(LS(F1)))  &kp LA(LC(LS(F2)))   &kp LA(LC(LS(F3)))   &kp LA(LC(LS(F4)))   &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LC(LS(F5)))  &kp LA(LC(LS(F6)))   &kp LA(LC(LS(F7)))   &kp LA(LC(LS(F8)))   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-        &kp LA(LC(LS(F9)))  &kp LA(LC(LS(F10)))  &kp LA(LC(LS(F11)))  &kp LA(LC(LS(F12)))                                    &trans  &trans  &trans  &trans
-                                                                      &trans               &trans  &trans    &trans  &trans  &trans
+                            &trans               &trans                                                                                          &trans  &trans
+        &kp LA(LC(LS(F1)))  &kp LA(LC(LS(F2)))   &kp LA(LC(LS(F3)))   &kp LA(LC(LS(F4)))   &kp LA(LC(LS(F5)))                    &trans  &trans  &trans  &trans  &trans
+&trans  &kp LA(LC(LS(F6)))  &kp LA(LC(LS(F7)))   &kp LA(LC(LS(F8)))   &kp LA(LC(LS(F9)))   &trans                                &trans  &trans  &trans  &trans  &trans  &trans
+        &trans              &kp LA(LC(LS(F10)))  &kp LA(LC(LS(F11)))  &kp LA(LC(LS(F12)))                                                &trans  &trans  &trans  &trans
+                                                                      &trans               &trans              &trans    &trans  &trans  &trans
             >;
         };
 
         function {
             bindings = <
-                &trans  &trans                                                          &sk LEFT_ALT  &sk LEFT_WIN
-        &trans  &trans  &trans  &trans  &trans                    &trans  &kp LEFT_WIN  &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans        &trans        &trans        &trans  &trans
-        &trans  &trans  &trans  &trans                                    &trans        &trans        &trans        &trans
-                                &trans  &trans  &trans    &trans  &trans  &trans
+                &trans  &sk LEFT_ALT                                                                &kp LA(LC(DELETE))  &trans
+        &trans  &trans  &trans        &trans  &trans                    &trans        &kp LEFT_WIN  &trans              &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans                    &trans        &trans        &trans              &trans  &trans  &trans
+        &trans  &trans  &trans        &trans                                          &kp RG(L)     &trans              &trans  &trans
+                                      &trans  &trans  &trans    &trans  &sk LEFT_WIN  &trans
             >;
         };
     };
