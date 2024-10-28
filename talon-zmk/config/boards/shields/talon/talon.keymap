@@ -147,11 +147,11 @@
 
         navigation {
             bindings = <
-                &trans  &trans                                                                                     &trans                     &trans
-        &trans  &trans  &trans  &trans      &trans                       &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LA(LEFT_PARENTHESIS)  &kp LA(LC(RIGHT_PARENTHESIS))
-&trans  &trans  &trans  &trans  &trans      &trans                       &trans          &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT                 &kp TAB                        &trans
-        &trans  &trans  &trans  &trans                                                   &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
-                                &kp DELETE  &trans  &trans    &kp LC(D)  &kp LC(U)       &trans
+                &trans  &trans                                                                                  &trans                     &trans
+        &trans  &trans  &trans  &trans      &trans                    &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LA(LEFT_PARENTHESIS)  &kp LA(LC(RIGHT_PARENTHESIS))
+&trans  &trans  &trans  &trans  &trans      &trans                    &kp LC(U)       &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT                 &kp TAB                        &trans
+        &trans  &trans  &trans  &trans                                                &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
+                                &kp DELETE  &trans  &trans    &trans  &kp LC(D)       &trans
             >;
         };
 
