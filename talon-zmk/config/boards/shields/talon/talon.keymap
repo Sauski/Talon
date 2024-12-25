@@ -2,93 +2,14 @@
 #include <dt-bindings/zmk/keys.h>
 
 &sk {
-    release-after-ms = <800>;
+    release-after-ms = <600>;
     quick-release;
 };
 
-&sl { release-after-ms = <800>; };
+&sl { release-after-ms = <600>; };
 
 / {
     behaviors {
-        bmt_left: bmt_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BMT_LEFT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <360>;
-            flavor = "balanced";
-            retro-tap;
-            require-prior-idle-ms = <240>;
-            hold-trigger-key-positions = <31 32 33 24 14 16 15 25 27 26 17 18 19 4 5 7 6>;
-            hold-trigger-on-release;
-        };
-
-        bmt_right: bmt_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BMT_RIGHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <360>;
-            flavor = "balanced";
-            retro-tap;
-            require-prior-idle-ms = <240>;
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 13 20 21 22 23 28 29 30>;
-        };
-
-        blt_left: blt_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BLT_LEFT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <360>;
-            retro-tap;
-            require-prior-idle-ms = <240>;
-            hold-trigger-key-positions = <4 5 6 7 14 15 16 17 18 19 24 25 26 27 31 32 33>;
-        };
-
-        blt_right: blt_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BLT_RIGHT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <360>;
-            retro-tap;
-            require-prior-idle-ms = <240>;
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 13 20 21 22 23 28 29 30>;
-        };
-
-        tap_layer_left_short: tap_layer_left_short {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER_LEFT_SHORT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <120>;
-            retro-tap;
-            require-prior-idle-ms = <120>;
-            hold-trigger-key-positions = <4 5 6 7 14 15 16 17 18 19 24 25 26 27 31 32 33>;
-        };
-
-        tap_layer_right_short: tap_layer_right_short {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER_RIGHT_SHORT";
-            bindings = <&mo>, <&kp>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <120>;
-            retro-tap;
-            require-prior-idle-ms = <120>;
-            hold-trigger-key-positions = <0 1 2 3 8 9 10 11 12 13 20 21 22 23 28 29 30>;
-        };
-
         smart_shift: smart_shift {
             compatible = "zmk,behavior-mod-morph";
             label = "SMART_SHIFT";
@@ -147,11 +68,11 @@
 
         navigation {
             bindings = <
-                &trans  &trans                                                                                  &trans                     &trans
-        &trans  &trans  &trans  &trans      &trans                    &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LA(LEFT_PARENTHESIS)  &kp LA(LC(RIGHT_PARENTHESIS))
-&trans  &trans  &trans  &trans  &trans      &trans                    &kp LC(U)       &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT                 &kp TAB                        &trans
-        &trans  &trans  &trans  &trans                                                &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
-                                &kp DELETE  &trans  &trans    &trans  &kp LC(D)       &trans
+                &trans  &trans                                                                                   &trans                     &trans
+        &trans  &trans  &trans  &trans      &trans                     &kp LEFT_ARROW  &kp LA(LC(LEFT_BRACKET))  &kp LA(LC(RIGHT_BRACKET))  &kp LA(LEFT_PARENTHESIS)  &kp LA(LC(RIGHT_PARENTHESIS))
+&trans  &trans  &trans  &trans  &trans      &trans                     &kp LC(U)       &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT                 &kp PERIOD                     &kp ENTER
+        &trans  &trans  &trans  &trans                                                 &kp LA(LC(PAGE_UP))       &kp LA(LC(PAGE_DOWN))      &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
+                                &kp DELETE  &kp TAB  &trans    &trans  &kp LC(D)       &trans
             >;
         };
 
@@ -167,11 +88,11 @@
 
         function {
             bindings = <
-                &trans  &sk LEFT_ALT                                                                &kp LA(LC(DELETE))  &trans
-        &trans  &trans  &trans        &trans  &trans                    &trans        &kp LEFT_WIN  &trans              &trans  &trans
-&trans  &trans  &trans  &trans        &trans  &trans                    &trans        &trans        &trans              &trans  &trans  &trans
-        &trans  &trans  &trans        &trans                                          &kp RG(L)     &trans              &trans  &trans
-                                      &trans  &trans  &trans    &trans  &sk LEFT_WIN  &trans
+                          &trans  &sk LEFT_ALT                                                                &kp LA(LC(DELETE))  &trans
+        &trans            &trans  &trans        &trans  &trans                    &trans        &kp LEFT_WIN  &trans              &trans  &trans
+&trans  &trans            &trans  &trans        &trans  &trans                    &trans        &trans        &trans              &trans  &trans  &trans
+        &kp LC(LEFT_ALT)  &trans  &trans        &trans                                          &kp RG(L)     &trans              &trans  &trans
+                                                &trans  &trans  &trans    &trans  &sk LEFT_WIN  &trans
             >;
         };
     };
