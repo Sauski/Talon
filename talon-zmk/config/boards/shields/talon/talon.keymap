@@ -25,8 +25,8 @@
             bindings = <&mo>, <&sl>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            flavor = "balanced";
+            tapping-term-ms = <1000>;
+            flavor = "hold-preferred";
             retro-tap;
         };
     };
@@ -88,11 +88,11 @@
 
         function {
             bindings = <
-                          &trans  &sk LEFT_ALT                                                                &kp LA(LC(DELETE))  &trans
-        &trans            &trans  &trans        &trans  &trans                    &trans        &kp LEFT_WIN  &trans              &trans  &trans
-&trans  &trans            &trans  &trans        &trans  &trans                    &trans        &trans        &trans              &trans  &trans  &trans
-        &kp LC(LEFT_ALT)  &trans  &trans        &trans                                          &kp RG(L)     &trans              &trans  &trans
-                                                &trans  &trans  &trans    &trans  &sk LEFT_WIN  &trans
+                &kp LA(LC(DOUBLE_QUOTES))  &sk LEFT_ALT                                                                &kp LA(LC(DELETE))  &trans
+        &trans  &trans                     &trans        &trans  &trans                    &trans        &kp LEFT_WIN  &trans              &trans  &trans
+&trans  &trans  &trans                     &trans        &trans  &trans                    &trans        &trans        &trans              &trans  &trans  &trans
+        &trans  &trans                     &trans        &trans                                          &kp RG(L)     &trans              &trans  &trans
+                                                         &trans  &trans  &trans    &trans  &sk LEFT_WIN  &trans
             >;
         };
     };
