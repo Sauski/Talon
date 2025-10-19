@@ -71,7 +71,7 @@
                 &trans  &trans                                                                               &trans                 &trans
         &trans  &trans  &trans  &trans      &trans                     &kp LEFT_ARROW  &kp LA(LEFT_BRACKET)  &kp LA(RIGHT_BRACKET)  &kp LA(LEFT_PARENTHESIS)  &kp LA(RIGHT_PARENTHESIS)
 &trans  &trans  &trans  &trans  &trans      &trans                     &kp LC(U)       &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT                 &kp PERIOD                 &kp ENTER
-        &trans  &trans  &trans  &trans                                                 &kp LA(LC(PAGE_UP))   &kp LA(LC(PAGE_DOWN))  &kp LA(LC(LEFT_BRACE))    &kp LA(LC(RIGHT_BRACE))
+        &trans  &trans  &trans  &trans                                                 &kp LA(LC(PAGE_UP))   &kp LA(LC(PAGE_DOWN))  &kp LA(LEFT_BRACE)        &kp LA(RIGHT_BRACE)
                                 &kp DELETE  &kp TAB  &trans    &trans  &kp LC(D)       &trans
             >;
         };
