@@ -444,6 +444,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -490,7 +491,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "talon.step",
@@ -615,7 +616,7 @@
   "sheets": [
     [
       "ebf0a0ac-8a12-499e-9958-b68a562b6c66",
-      ""
+      "Root"
     ]
   ],
   "text_variables": {}
