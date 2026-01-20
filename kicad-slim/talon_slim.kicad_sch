@@ -5061,7 +5061,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SW_PG1350_reversible_1.5U"
+		(property "Footprint" "footprints:SW_PG1350_reversible"
 			(at 124.46 114.3 0)
 			(effects
 				(font
@@ -6190,7 +6190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:SW_PG1350_reversible"
+		(property "Footprint" "footprints:SW_PG1350_reversible_1.5U"
 			(at 69.85 71.12 0)
 			(effects
 				(font
